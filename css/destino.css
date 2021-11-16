@@ -1,0 +1,593 @@
+/*generales*/
+* body {
+  background-color: #F0F0F0;
+  margin: 0px;
+  font-family: 'Dosis', sans-serif; }
+
+/* Desktop*/
+@media (min-width: 1024px) {
+  * {
+    margin: 0px; }
+  body {
+    font-family: 'Dosis', sans-serif;
+    color: #2e2d2d; }
+  h1 {
+    color: #2e2d2d;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold; }
+  .colorNaranja {
+    color: orangered; }
+  .centrarTexto {
+    text-align: center;
+    font-size: 45px; }
+  .coloresTitulos {
+    background-color: #F8D022;
+    color: orangered;
+    height: 90px; }
+  .margenesTitulos {
+    margin-bottom: 10px;
+    padding-top: 15px; }
+  .negrita {
+    font-weight: bold; }
+  .justificarTexto {
+    text-align: justify; }
+  div {
+    font-size: 18px;
+    line-height: 1.5; }
+  .margenes {
+    margin-right: 10px;
+    margin-bottom: 20px;
+    margin-left: 30px; }
+  div p {
+    width: 95%; }
+  .espacioInterno {
+    padding: 2px 5px 4px 2px; }
+  .margenDerecha {
+    width: 40%;
+    margin-top: 8px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    margin-left: 400px; }
+  .margenesSlogan {
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 40px; }
+  .imagenFondo {
+    border-radius: 15px;
+    margin-left: 20px; }
+  .imagenDos {
+    border-radius: 15px;
+    margin-left: 100px; }
+  footer {
+    height: 200px;
+    background-color: orangered; }
+  .textoFooter {
+    font-size: 12px; }
+  .destacarTexto {
+    background-color: orangered;
+    font-weight: bold; }
+  .sloganImportante {
+    font-size: 60px;
+    text-align: center; }
+  .paraVer {
+    width: 680px;
+    height: 220px; }
+  .paraServicios {
+    width: 650px;
+    height: 200px;
+    margin-left: 200px;
+    padding-top: 20px;
+    padding-left: 20px; }
+  .paraServicioDos {
+    width: 650px;
+    height: 200px;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-left: 20px; }
+  .paraSeparar {
+    margin-top: 25px;
+    margin-bottom: 35px; }
+  .videoIndex {
+    width: 550px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 20px; }
+  .margenesFooter {
+    padding-top: 20px;
+    padding-left: 50px; }
+  .margenesBoton {
+    margin-top: 1px;
+    margin-left: 60px; }
+  .primero {
+    margin-left: 52px; }
+  .margenesRedes {
+    margin-top: 50px;
+    margin-right: 12px;
+    margin-left: 5px;
+    padding-left: 25px; }
+  .margenesContacto {
+    margin-top: 25px;
+    margin-left: 120px; }
+  .sizeFooter {
+    font-size: 18px; }
+  .letraFooter {
+    color: white; }
+  h3 {
+    font-weight: bold;
+    font-size: 40px; }
+  .paraContacto {
+    background-color: orangered;
+    color: white;
+    width: 600px;
+    border-radius: 25px;
+    margin: 20px 420px 30px 370px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    font-size: 20px; }
+  h4 {
+    font-size: 28px;
+    font-weight: bold; }
+  .TituloFooter {
+    font-size: 28px; }
+  .estilosInput {
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    padding-left: 15px; }
+  .botonesContacto {
+    margin-left: 30px;
+    border-radius: 10px; }
+  .notMargenes {
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    margin-left: 50px; }
+  /* Estilos FlexBox index*/
+  .seccionesIndex {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: center; }
+  .seccionVideo {
+    display: inline-flex;
+    justify-content: right;
+    flex-wrap: nowrap; }
+  /* Estilos FlexBox servicios*/
+  .seccionServicios {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  .divServicios {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+  .seccionNoticias {
+    display: inline-flex;
+    flex-direction: row;
+    flex-flow: wrap; }
+  .centrarTodo {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+  /* Estilos Grid productos*/
+  .gridFooter {
+    display: grid;
+    grid-template-columns: 0.4fr 0.3fr 0.3fr; }
+  /*transiciones*/
+  .tranImagenes {
+    width: 350px;
+    height: 216px;
+    transition: all 2s; }
+  .moverImagenes:hover {
+    height: 256px;
+    width: 400px; }
+  .transRedes {
+    width: 85px;
+    height: 65px;
+    transition: all 2s; }
+  .redesImagenes:hover {
+    width: 100px;
+    height: 80px; }
+  /*Hover Productos*/
+  .contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+  .contenedor figure {
+    position: relative;
+    height: 250px;
+    cursor: pointer;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 6px; }
+  .contenedor figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform; }
+  .contenedor figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 1, 2, 0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center; }
+  .contenedor figure:hover > .capa {
+    opacity: 1;
+    visibility: visible; }
+  .contenedor figure:hover > .capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px; }
+  .contenedor figure:hover > img {
+    transform: scale(1.3); }
+  .contenedor figure .capa h4 {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px; }
+  .contenedor figure .capa p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto; } }
+
+/* Tablet*/
+@media (min-width: 600px) and (max-width: 1023px) {
+  .centro {
+    text-align: center; }
+  .margenes {
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px; }
+  .seccionesIndex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .coloresTitulos {
+    background-color: #F8D022;
+    color: orangered;
+    height: 70px;
+    padding-top: 10px;
+    font-weight: bold; }
+  .margenesTitulos {
+    margin-top: 0px;
+    margin-left: 0px;
+    text-align: center; }
+  .destacarTexto {
+    background-color: orangered;
+    font-weight: bold; }
+  .videoIndex {
+    width: 550px;
+    height: 310px;
+    margin-top: 20px;
+    margin-left: 90px; }
+  .seccionVideo {
+    display: flex;
+    flex-direction: column; }
+  .sloganImportante {
+    margin: 10px;
+    font-size: 60px;
+    text-align: center; }
+  h3 {
+    font-weight: bold;
+    font-size: 40px; }
+  footer {
+    padding: 15px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold; }
+  .paraContacto {
+    background-color: orangered;
+    color: white;
+    width: 450px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 18px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 150px; }
+  .estilosInput {
+    width: 400px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    padding-left: 15px; }
+  .botonesContacto {
+    margin-left: 10px;
+    border-radius: 10px; }
+  .gridFooter {
+    display: grid;
+    grid-template-columns: 0.4fr 0.3fr 0.2fr; }
+  .margenesfooter {
+    margin: 10px; }
+  .centro {
+    text-align: center; }
+  .margenesRedes {
+    margin-top: 50px; }
+  .imagenFondo {
+    border-radius: 15px;
+    margin-left: 150px;
+    width: 400px; }
+  .imagenDos {
+    border-radius: 15px;
+    margin-left: 150px;
+    width: 400px; }
+  .paraSeparar {
+    margin-top: 25px;
+    margin-bottom: 35px; }
+  .reverse {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap; }
+  .new {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .notMargenes {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px; }
+  .seccionNoticias {
+    margin-left: 50px; }
+  /*Hover Productos*/
+  .contenedor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+  .contenedor figure {
+    position: relative;
+    height: 250px;
+    cursor: pointer;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 6px; }
+  .contenedor figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform; }
+  .contenedor figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 1, 2, 0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center; }
+  .contenedor figure:hover > .capa {
+    opacity: 1;
+    visibility: visible; }
+  .contenedor figure:hover > .capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px; }
+  .contenedor figure:hover > img {
+    transform: scale(1.3); }
+  .contenedor figure .capa h4 {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px; }
+  .contenedor figure .capa p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto; }
+  /*Hover Productos*/
+  .contenedor {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+  .contenedor figure {
+    position: relative;
+    height: 250px;
+    cursor: pointer;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 6px; }
+  .contenedor figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform; }
+  .contenedor figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 1, 2, 0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center; }
+  .contenedor figure:hover > .capa {
+    opacity: 1;
+    visibility: visible; }
+  .contenedor figure:hover > .capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px; }
+  .contenedor figure:hover > img {
+    transform: scale(1.3); }
+  .contenedor figure .capa h4 {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px; }
+  .contenedor figure .capa p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto; } }
+
+/* Smartphone*/
+@media (max-width: 599px) {
+  .centro {
+    text-align: center; }
+  .contenedorDiv {
+    display: inline-flex;
+    flex-flow: column; }
+  .destacarTexto {
+    background-color: orangered;
+    font-weight: bold; }
+  .justificarTexto {
+    text-align: justify; }
+  .margenes {
+    margin: 10px; }
+  .coloresTitulos {
+    background-color: #F8D022;
+    color: orangered;
+    height: 65px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px; }
+  .seccionesIndex {
+    display: flex;
+    flex-direction: column; }
+  .seccionVideo {
+    width: 80%;
+    display: flex;
+    flex-direction: column; }
+  .videoIndex {
+    margin-top: 5px;
+    margin-left: 50px; }
+  .sloganImportante {
+    padding: 0px;
+    margin: 20px;
+    font-size: 40px;
+    text-align: center; }
+  .margenesSlogan {
+    margin-bottom: 20px; }
+  footer {
+    padding: 10px;
+    background-color: orangered;
+    color: white;
+    font-weight: bold; }
+  .footerMobile {
+    padding-top: 40px;
+    width: 70%;
+    margin-left: 55px; }
+  h3 {
+    font-weight: bold;
+    font-size: 40px; }
+  .sizeSub {
+    font-size: 40px; }
+  .reverse {
+    display: inline-flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap; }
+  .new {
+    display: flex;
+    flex-flow: row wrap; }
+  .notMargenes {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px; }
+  .paraContacto {
+    background-color: orangered;
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    padding: 18px;
+    margin: 15px; }
+  .estilosInput {
+    width: 300px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    padding-left: 15px; }
+  .botonesContacto {
+    margin-left: 10px;
+    border-radius: 10px; }
+  .seccionServicios {
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+  .imagenFondo {
+    border-radius: 15px;
+    margin-left: 50px;
+    width: 400px; }
+  .imagenDos {
+    border-radius: 15px;
+    margin-left: 50px;
+    width: 400px; }
+  .paraSeparar {
+    margin-top: 25px;
+    margin-bottom: 35px; }
+  .seccionNoticias {
+    margin-left: 50px; }
+  .estilosInput {
+    border-radius: 10px;
+    margin-bottom: 8px;
+    padding-left: 15px; }
+  /*Hover Productos*/
+  .contenedor {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%; }
+  .contenedor figure {
+    position: relative;
+    height: 250px;
+    cursor: pointer;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 6px; }
+  .contenedor figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform; }
+  .contenedor figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 1, 2, 0.7);
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center; }
+  .contenedor figure:hover > .capa {
+    opacity: 1;
+    visibility: visible; }
+  .contenedor figure:hover > .capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px; }
+  .contenedor figure:hover > img {
+    transform: scale(1.3); }
+  .contenedor figure .capa h4 {
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 120px;
+    transition: all 400ms ease-out;
+    margin-top: 30px; }
+  .contenedor figure .capa p {
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 220px;
+    margin: auto; } }
